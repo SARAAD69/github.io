@@ -136,8 +136,8 @@ body {
 /* line 115, ../../../Documents/GitHub/github.io/sass/style.sass */
 .dropdown:hover .dropdown-content {
   display: block;
-  margin-top: 2.5%;
-  margin-left: -1.5%;
+  margin-top: 50px;
+  margin-left: -25px;
 }
 
 /* line 121, ../../../Documents/GitHub/github.io/sass/style.sass */
@@ -202,7 +202,7 @@ body {
   }
   /* line 169, ../../../Documents/GitHub/github.io/sass/style.sass */
   .dropdown:hover .dropdown-content {
-    margin-left: 30%;
+    margin-left: 31%;
     margin-top: 0%;
   }
 }
