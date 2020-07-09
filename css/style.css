@@ -543,6 +543,22 @@ body {
     display: table;
     background-color: #448ccb;
   }
+  /* line 446, ../../../Documents/GitHub/github.io/sass/style.sass */
+  #list_section p p {
+    font-size: 4vw;
+  }
+  /* line 449, ../../../Documents/GitHub/github.io/sass/style.sass */
+  #list_section p li {
+    font-size: 3vw;
+  }
+  /* line 453, ../../../Documents/GitHub/github.io/sass/style.sass */
+  .right_list .list_heading {
+    font-size: 4vw;
+  }
+  /* line 456, ../../../Documents/GitHub/github.io/sass/style.sass */
+  .right_list .list_text {
+    font-size: 3vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
