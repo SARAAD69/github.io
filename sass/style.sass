@@ -6,6 +6,7 @@ $R_font: 15px Open Sans
 $font_logo: 27px Open Sans
 $title_font: 41px Open Sans
 $section_title_font: 1.5vw Open Sans
+$listsection_text_font: 1.45vw Open Sans
 $section_text_font: 1.2vw Open Sans
 $head_color: rgb(68, 140, 203)
 $main_color: rgb(255, 255, 255)
@@ -272,14 +273,14 @@ body
   background-color:#d7d7d7
 
 #ch2_2
-    margin-left: 2%
+    margin-left: 4.25%
     font: $section_title_font
     font-weight: 700
     text-transform: uppercase
     color: $main_color
 
 .content2_2
-    margin-left: 2%
+    margin-left: 4.25%
     font: $section_text_font
     color: $main_color
 
@@ -294,6 +295,39 @@ body
     height: 100%
 
 .left_list
+    width: 50%
+    background-color: $main_color
+    overflow: auto
+
+#result
+    height: 100%
+
+
+    ul
+      list-style-type: none
+      padding-left: 7%
+      padding-right: 4%
+      font: $listsection_text_font
+      font-style: italic
+      text-align: justify
+
+      li
+          border-bottom: 0.1vw solid $hover_color 
+
+
+.list_heading
+    font: $L_font
+    color: $hover_color
+    font-weight: 700
+    font-size: 1.4vw
+    margin-left: 7%
+
+.list_text
+    font: $listsection_text_font
+    margin-left: 7%
+    width: 90%
+
+.right_list
     width: 50%
     background-color: $main_color
 

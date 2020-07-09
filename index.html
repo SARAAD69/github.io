@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
  </head>
 
- <body>
+ <body onload="getAPI()">
 
     <div id="header">
         <div class="header-upper">
@@ -85,16 +85,13 @@
       
       <div id="list_section">
         <div class="column_list left_list">
-          <p id="ch1" class="title"><span>We</span>lcome</p>
+          <p id="result"></p>
         </div>
-        <div class="column_list right">
-          <img src="img/Img_section1_2.png">
-          <p id="ch1_2">UI/UX Design</p>
-          <p class="content1_2">
-            Fusce posuere et males uada est, nec convallis euis mod. Nam eleifen elitinex placerat semper vitae et enim.
-          </p>
-          <p class="content1_2 last">  
-            Males uada est, nec convallis euis mod. Nam eleifen elitinex placerat.
+        <div class="column_list right_list">
+          <p>
+            <p class="list_heading"> Web development </p>
+            <p class="list_text"> Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut. Integer nec ex accumsan, 
+              suscipit eros a, tempus nisi. </p>
           </p>
        </div>
       </div>
