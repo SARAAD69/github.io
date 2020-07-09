@@ -308,7 +308,7 @@ body {
   /* line 254, ../../../Documents/GitHub/github.io/sass/style.sass */
   .left {
     margin: 0;
-    margin-top: 20%;
+    margin-top: 7.5%;
     width: 100%;
   }
   /* line 259, ../../../Documents/GitHub/github.io/sass/style.sass */
@@ -318,7 +318,30 @@ body {
   }
   /* line 263, ../../../Documents/GitHub/github.io/sass/style.sass */
   #ch1 {
-    font-size: 7vw;
+    font-size: 5vw;
+  }
+  /* line 266, ../../../Documents/GitHub/github.io/sass/style.sass */
+  .content {
+    width: 90%;
+    padding: 5%;
+    text-align: justify;
+    margin: 0;
+    font-size: 3vw;
+  }
+  /* line 273, ../../../Documents/GitHub/github.io/sass/style.sass */
+  .button {
+    margin: auto;
+    margin-bottom: 8%;
+    font-size: 3.5vw;
+    border: 1vw solid white;
+    padding: 1.5vw 1.7vw;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 481px) and (max-width: 767px) {
+  /* line 281, ../../../Documents/GitHub/github.io/sass/style.sass */
+  #ch1 {
+    color: red;
   }
 }
 
