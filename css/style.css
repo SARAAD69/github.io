@@ -538,7 +538,7 @@ body {
   /* line 437, ../../../Documents/GitHub/github.io/sass/style.sass */
   .right2 {
     margin: 0;
-    margin-top: 20%;
+    margin-top: 6%;
     width: 100%;
     display: table;
     background-color: #448ccb;
@@ -558,6 +558,18 @@ body {
   /* line 456, ../../../Documents/GitHub/github.io/sass/style.sass */
   .right_list .list_text {
     font-size: 3vw;
+  }
+  /* line 459, ../../../Documents/GitHub/github.io/sass/style.sass */
+  #mob {
+    margin-top: -14%;
+  }
+  /* line 462, ../../../Documents/GitHub/github.io/sass/style.sass */
+  #list_section {
+    height: 30vw;
+  }
+  /* line 465, ../../../Documents/GitHub/github.io/sass/style.sass */
+  .column_list {
+    height: 105%;
   }
 }
 
