@@ -146,8 +146,7 @@ body
 
 .column 
   float: left
-  height: fit-content
-  height: -moz-max-content
+  height: 46vw
   position: relative
   top: 50%
   -webkit-transform: translateY(-50%)
@@ -165,7 +164,7 @@ body
 
 .title
       font: $title_font
-      font-weight: bold
+      font-weight: 700
       text-transform: uppercase
 
 #ch1
@@ -173,18 +172,18 @@ body
     color: $main_color
     text-align: center    
 
-.content
+.content1
     display: block
     width: 60%
     font: $L_font
     color: $main_color
-    font-size: 1vw
+    font-size: 1.2vw
     text-align: left
     margin-left: 15%
     margin-top: 20%
     position: relative
 
-.button
+.button1
   margin-left: 50%
   margin-top: 40%
   margin-bottom: 15%
@@ -211,6 +210,32 @@ body
 .right
   margin-left: 8.5%
   width: 53%
+  background-color:#d7d7d7
+  
+  img
+      width: 100%
+
+#ch1_2
+    font: $L_font
+    color: $hover_color
+    font-size: 1.5vw
+    font-weight: 700
+    text-transform: uppercase
+    margin-left: 10%
+    margin-top: 6%
+
+.content1_2
+    display: block
+    width: 70%
+    font: $L_font
+    color: $hover_color
+    font-size: 1.2vw
+    text-align: left
+    margin-left: 10%
+    position: relative
+
+.last
+    margin-bottom: 8.5%
 
 #contentholder1:after
   content: ""
@@ -258,24 +283,32 @@ body
         margin: 0
         margin-top: 7.5%
         width: 100%
+        display: table
 
     .right
         margin: 0
+        margin-top: -5%
         width: 100%
 
     #ch1
         font-size: 5vw
     
-    .content
+    .content1
         width: 90%
         padding: 5%
         text-align: justify
         margin: 0
         font-size: 3vw
 
-    .button
+    .button1
         margin: auto
         margin-bottom: 8%
         font-size: 3.5vw
         border: 1vw solid $main_color
         padding: 1.5vw 1.7vw
+
+    #ch1_2
+        margin: 0
+        margin-top: 2%
+        font-size: 5vw
+        text-align: center

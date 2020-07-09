@@ -175,7 +175,7 @@ body {
 /* line 147, ../../../Documents/GitHub/github.io/sass/style.sass */
 .column {
   float: left;
-  height: fit-content;
+  height: 46vw;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -199,7 +199,7 @@ body {
 /* line 165, ../../../Documents/GitHub/github.io/sass/style.sass */
 .title {
   font: 41px Open Sans;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -211,12 +211,12 @@ body {
 }
 
 /* line 175, ../../../Documents/GitHub/github.io/sass/style.sass */
-.content {
+.content1 {
   display: block;
   width: 60%;
   font: 12px Open Sans;
   color: white;
-  font-size: 1vw;
+  font-size: 1.2vw;
   text-align: left;
   margin-left: 15%;
   margin-top: 20%;
@@ -224,7 +224,7 @@ body {
 }
 
 /* line 186, ../../../Documents/GitHub/github.io/sass/style.sass */
-.button {
+.button1 {
   margin-left: 50%;
   margin-top: 40%;
   margin-bottom: 15%;
@@ -246,7 +246,7 @@ body {
 }
 
 /* line 206, ../../../Documents/GitHub/github.io/sass/style.sass */
-.button:hover {
+.button1:hover {
   background-color: white;
   color: #448ccb;
 }
@@ -255,9 +255,43 @@ body {
 .right {
   margin-left: 8.5%;
   width: 53%;
+  background-color: #d7d7d7;
 }
 
-/* line 214, ../../../Documents/GitHub/github.io/sass/style.sass */
+/* line 215, ../../../Documents/GitHub/github.io/sass/style.sass */
+.right img {
+  width: 100%;
+}
+
+/* line 218, ../../../Documents/GitHub/github.io/sass/style.sass */
+#ch1_2 {
+  font: 12px Open Sans;
+  color: black;
+  font-size: 1.5vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 10%;
+  margin-top: 6%;
+}
+
+/* line 227, ../../../Documents/GitHub/github.io/sass/style.sass */
+.content1_2 {
+  display: block;
+  width: 70%;
+  font: 12px Open Sans;
+  color: black;
+  font-size: 1.2vw;
+  text-align: left;
+  margin-left: 10%;
+  position: relative;
+}
+
+/* line 237, ../../../Documents/GitHub/github.io/sass/style.sass */
+.last {
+  margin-bottom: 8.5%;
+}
+
+/* line 240, ../../../Documents/GitHub/github.io/sass/style.sass */
 #contentholder1:after {
   content: "";
   display: table;
@@ -265,78 +299,87 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  /* line 222, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 248, ../../../Documents/GitHub/github.io/sass/style.sass */
   #header {
     height: fit-content;
     height: -moz-max-content;
     display: table;
   }
-  /* line 227, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 253, ../../../Documents/GitHub/github.io/sass/style.sass */
   .header-upper {
     margin-left: 0;
     text-align: center;
     width: 100%;
   }
-  /* line 232, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 258, ../../../Documents/GitHub/github.io/sass/style.sass */
   .header-upper a {
     padding-right: 1.25%;
     font: 11px Open Sans;
   }
-  /* line 236, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 262, ../../../Documents/GitHub/github.io/sass/style.sass */
   .header-lower a {
     float: none;
     display: block;
   }
-  /* line 240, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 266, ../../../Documents/GitHub/github.io/sass/style.sass */
   .header-right {
     float: none;
     text-align: center;
   }
-  /* line 244, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 270, ../../../Documents/GitHub/github.io/sass/style.sass */
   .logo {
     margin-left: 0;
     text-align: center;
   }
-  /* line 248, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 274, ../../../Documents/GitHub/github.io/sass/style.sass */
   .dropdown {
     float: none;
     margin: 0 auto;
   }
-  /* line 252, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 278, ../../../Documents/GitHub/github.io/sass/style.sass */
   .dropdown:hover .dropdown-content {
     margin-left: 30%;
     margin-top: 0%;
   }
-  /* line 256, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 282, ../../../Documents/GitHub/github.io/sass/style.sass */
   .left {
     margin: 0;
     margin-top: 7.5%;
     width: 100%;
+    display: table;
   }
-  /* line 261, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 288, ../../../Documents/GitHub/github.io/sass/style.sass */
   .right {
     margin: 0;
+    margin-top: -5%;
     width: 100%;
   }
-  /* line 265, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 293, ../../../Documents/GitHub/github.io/sass/style.sass */
   #ch1 {
     font-size: 5vw;
   }
-  /* line 268, ../../../Documents/GitHub/github.io/sass/style.sass */
-  .content {
+  /* line 296, ../../../Documents/GitHub/github.io/sass/style.sass */
+  .content1 {
     width: 90%;
     padding: 5%;
     text-align: justify;
     margin: 0;
     font-size: 3vw;
   }
-  /* line 275, ../../../Documents/GitHub/github.io/sass/style.sass */
-  .button {
+  /* line 303, ../../../Documents/GitHub/github.io/sass/style.sass */
+  .button1 {
     margin: auto;
     margin-bottom: 8%;
     font-size: 3.5vw;
     border: 1vw solid white;
     padding: 1.5vw 1.7vw;
+  }
+  /* line 310, ../../../Documents/GitHub/github.io/sass/style.sass */
+  #ch1_2 {
+    margin: 0;
+    margin-top: 2%;
+    font-size: 5vw;
+    text-align: center;
   }
 }
 
