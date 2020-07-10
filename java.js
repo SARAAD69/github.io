@@ -1,8 +1,8 @@
 
 
 function getAPI() {
-  fetch('https://jsonplaceholder.typicode.com/posts').then(function (res) {
-    return res.json();
+  fetch('https://jsonplaceholder.typicode.com/posts').then(function (list) {
+    return list.json();
   }).then(function (data) {
     var result = "<p class=\"list_heading\"> Custom List </p>\n <p class=\"list_text\"> Some heading </p>";
     data.forEach(function (user) {
@@ -22,4 +22,8 @@ function ChangeBorder(x){
 
 function ReturnBorder(x){
   x.style.borderColor = "#d7d7d7"
+}
+
+function LearnMore() {
+  alert("Will be implemented in future...");
 }

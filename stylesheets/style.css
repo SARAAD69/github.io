@@ -217,6 +217,10 @@ body {
   color: #448ccb;
 }
 
+#button1:focus {
+  outline: none;
+}
+
 .right {
   margin-left: 6.5%;
   width: 53%;
