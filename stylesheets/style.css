@@ -95,7 +95,7 @@ body {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 10px 10px 10px;
+  border-width: 0 12px 12px 12px;
   border-color: transparent transparent #1e2123 transparent;
   z-index: 1;
 }
@@ -591,7 +591,12 @@ body {
   }
   .dropdown:hover .dropdown-content {
     margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
     margin-top: 0%;
+  }
+  .dropdown:hover .dropdown-content ul:before {
+    right: 45%;
   }
   .left {
     margin: 0;
@@ -774,6 +779,9 @@ body {
     width: 90%;
     margin: 0 auto;
     margin-top: -4%;
+  }
+  #footer {
+    background-color: transparent;
   }
 }
 /*# sourceMappingURL=style.css.map */
