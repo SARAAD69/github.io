@@ -673,6 +673,11 @@ body {
     text-align: center;
   }
   /* line 537, ../../../Documents/GitHub/github.io/sass/style.sass */
+  #ch2_2 {
+    background-color: #448ccb;
+    padding: 1.5% 0;
+  }
+  /* line 541, ../../../Documents/GitHub/github.io/sass/style.sass */
   .content2, .content2_2 {
     width: 90%;
     padding: 5%;
@@ -680,43 +685,47 @@ body {
     margin: 0;
     font-size: 3vw;
   }
-  /* line 544, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 548, ../../../Documents/GitHub/github.io/sass/style.sass */
+  .content2_2 {
+    background-color: #448ccb;
+  }
+  /* line 551, ../../../Documents/GitHub/github.io/sass/style.sass */
   .right2 {
     margin: 0;
     margin-top: 7.5%;
     width: 100%;
     display: table;
-    background-color: #448ccb;
+    background-color: none;
   }
-  /* line 553, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 560, ../../../Documents/GitHub/github.io/sass/style.sass */
   #list_section p p {
     font-size: 4vw;
   }
-  /* line 556, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 563, ../../../Documents/GitHub/github.io/sass/style.sass */
   #list_section p li {
     font-size: 3vw;
   }
-  /* line 560, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 567, ../../../Documents/GitHub/github.io/sass/style.sass */
   .right_list .list_heading {
     font-size: 4vw;
   }
-  /* line 563, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 570, ../../../Documents/GitHub/github.io/sass/style.sass */
   .right_list .list_text {
     font-size: 3vw;
   }
-  /* line 566, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 573, ../../../Documents/GitHub/github.io/sass/style.sass */
   #mob {
     margin-top: -14%;
   }
-  /* line 569, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 576, ../../../Documents/GitHub/github.io/sass/style.sass */
   #list_section {
     height: 30vw;
   }
-  /* line 572, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 579, ../../../Documents/GitHub/github.io/sass/style.sass */
   .column_list {
     height: 100%;
   }
-  /* line 576, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 583, ../../../Documents/GitHub/github.io/sass/style.sass */
   #freespace {
     display: block;
     width: 100%;
