@@ -12,6 +12,7 @@ $inputfieldTitle_font: 1.25vw Open Sans
 $head_color: #448ccb
 $main_color: #ffffff
 $hover_color: #1e2123
+$button2_color: #0c9aec
 $grey: #d7d7d7
 
 body
@@ -428,11 +429,11 @@ body
   transition-duration: 0.4s
   cursor: pointer
   background-color: $main_color
-  color: #0c9aec
-  border: 0.2vw solid #0c9aec
+  color: $button2_color
+  border: 0.2vw solid $button2_color
 
   &:hover
-    background-color: #0c9aec
+    background-color: $button2_color
     color: $main_color
 
   &:focus
@@ -611,7 +612,7 @@ body
 
             input[type=text], textarea
                 display: block
-                margin: auto
+                margin: 0 auto
                 width: 50%
 
             p
@@ -619,13 +620,15 @@ body
     
     #button2
         display: block
-        margin: auto
-        width: 10%
+        margin: 0 auto
+        width: 20%
+        border: 1vw solid $button2_color
+        padding: 1.5vw 1.7vw
     
     #top_field
         margin-top: 0
     
-    .messageform_fieldTitle
+    .messageform_fieldTitle, #button2
         font-size: 3.2vw
     
     .field1, .field2
