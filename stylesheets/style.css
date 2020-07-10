@@ -792,7 +792,7 @@ body {
   #button1 {
     margin-top: 30%;
   }
-  .content1_2 {
+  .content1_2, .content2, .content2_2 {
     font-size: 1.4vw;
   }
 }
