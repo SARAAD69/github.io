@@ -792,4 +792,7 @@ body {
   .content1_2, .content2, .content2_2 {
     font-size: 1.4vw;
   }
+  .list_heading, #ch2_1, #ch2_2 {
+    font-size: 1.8vw;
+  }
 }
