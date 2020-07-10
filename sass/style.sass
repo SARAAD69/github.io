@@ -4,10 +4,11 @@ $L_font: 12px Open Sans
 $l_font: 11px Open Sans
 $R_font: 15px Open Sans
 $font_logo: 27px Open Sans
-$title_font: 41px Open Sans
+$title_font: 3vw Open Sans
 $section_title_font: 1.5vw Open Sans
 $listsection_text_font: 1.45vw Open Sans
 $section_text_font: 1.2vw Open Sans
+$inputfieldTitle_font: 1.25vw Open Sans
 $head_color: rgb(68, 140, 203)
 $main_color: rgb(255, 255, 255)
 $hover_color: rgb(0, 0, 0)
@@ -171,7 +172,6 @@ body
       text-transform: uppercase
 
 #ch1
-    font-size: 3vw
     color: $main_color
     text-align: center    
 
@@ -338,6 +338,65 @@ body
 
 #freespace
     display: none
+
+#contentholder3
+    margin-top: 0
+    width: 100%
+    height: 58vw
+    background-color: $main_color
+
+.column3 
+  float: left
+  height: 48vw
+  position: relative
+  background-color: $main_color
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+  background-color: red
+
+.left3 
+  margin-left: 7.7%
+  width: 42%
+
+  span
+    border-bottom: 0.7vw solid
+    padding-bottom: 1.5vw
+
+#ch3
+    color: $hover_color
+    text-align: left
+    margin-bottom: 13%
+
+.content3
+    display: block
+    width: 95%
+    font: $section_text_font
+    color: $hover_color
+    text-align: left
+    position: relative
+
+.right3
+  width: 48%
+
+#top_field
+    margin-top: 10%
+
+.messageform_fieldTitle
+    font: $inputfieldTitle_font
+    font-weight: bold
+    text-transform: uppercase
+    margin-left: 3%
+
+.field1
+    font: $section_text_font
+    padding: 0.8vw 1.3vw
+
+#contentholder2:after
+  content: ""
+  display: table
+  clear: both
 
 
 
