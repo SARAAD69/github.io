@@ -787,7 +787,13 @@ body {
 
 @media screen and (max-width: 1024px) {
   .content1 {
-    font-size: 1.3wv;
+    font-size: 1.3vw;
+  }
+  #button1 {
+    margin-top: 30%;
+  }
+  .content1_2 {
+    font-size: 1.4vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
