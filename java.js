@@ -15,3 +15,11 @@ function getAPI() {
     });
   });
 }
+
+function ChangeBorder(x){
+  x.style.borderColor = "#1e2123"
+}
+
+function ReturnBorder(x){
+  x.style.borderColor = "#d7d7d7"
+}
