@@ -690,6 +690,18 @@ body {
     background-color: #448ccb;
   }
   /* line 551, ../../../Documents/GitHub/github.io/sass/style.sass */
+  #list_section {
+    border-bottom: 2vw solid #448ccb;
+  }
+  /* line 554, ../../../Documents/GitHub/github.io/sass/style.sass */
+  .list_heading {
+    margin-top: 0;
+  }
+  /* line 557, ../../../Documents/GitHub/github.io/sass/style.sass */
+  #result {
+    margin-top: 0;
+  }
+  /* line 560, ../../../Documents/GitHub/github.io/sass/style.sass */
   .right2 {
     margin: 0;
     margin-top: 7.5%;
@@ -697,35 +709,36 @@ body {
     display: table;
     background-color: none;
   }
-  /* line 560, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 569, ../../../Documents/GitHub/github.io/sass/style.sass */
   #list_section p p {
     font-size: 4vw;
   }
-  /* line 563, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 572, ../../../Documents/GitHub/github.io/sass/style.sass */
   #list_section p li {
     font-size: 3vw;
   }
-  /* line 567, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 576, ../../../Documents/GitHub/github.io/sass/style.sass */
   .right_list .list_heading {
     font-size: 4vw;
+    margin-top: -5%;
   }
-  /* line 570, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 580, ../../../Documents/GitHub/github.io/sass/style.sass */
   .right_list .list_text {
     font-size: 3vw;
   }
-  /* line 573, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 584, ../../../Documents/GitHub/github.io/sass/style.sass */
   #mob {
     margin-top: -14%;
   }
-  /* line 576, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 587, ../../../Documents/GitHub/github.io/sass/style.sass */
   #list_section {
     height: 30vw;
   }
-  /* line 579, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 590, ../../../Documents/GitHub/github.io/sass/style.sass */
   .column_list {
     height: 100%;
   }
-  /* line 583, ../../../Documents/GitHub/github.io/sass/style.sass */
+  /* line 594, ../../../Documents/GitHub/github.io/sass/style.sass */
   #freespace {
     display: block;
     width: 100%;
