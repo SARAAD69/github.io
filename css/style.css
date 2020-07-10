@@ -769,6 +769,28 @@ body {
   .right3 form p {
     text-align: center;
   }
+  /* line 620, ../../../Documents/GitHub/github.io/sass/style.sass */
+  #button2 {
+    display: block;
+    margin: auto;
+    width: 10%;
+  }
+  /* line 625, ../../../Documents/GitHub/github.io/sass/style.sass */
+  #top_field {
+    margin-top: 0;
+  }
+  /* line 628, ../../../Documents/GitHub/github.io/sass/style.sass */
+  .messageform_fieldTitle {
+    font-size: 3.2vw;
+  }
+  /* line 631, ../../../Documents/GitHub/github.io/sass/style.sass */
+  .field1, .field2 {
+    font-size: 3vw;
+  }
+  /* line 634, ../../../Documents/GitHub/github.io/sass/style.sass */
+  .field2 {
+    height: 45%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
