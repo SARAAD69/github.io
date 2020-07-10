@@ -9,6 +9,9 @@ $section_title_font: 1.5vw Open Sans
 $listsection_text_font: 1.45vw Open Sans
 $section_text_font: 1.2vw Open Sans
 $inputfieldTitle_font: 1.25vw Open Sans
+$footertext_font: 1vw Open Sans
+$footer_link_font: 1.1vw Open Sans
+$footerlogo_font: 0.8vw Open Sans
 $head_color: #448ccb
 $main_color: #ffffff
 $hover_color: #1e2123
@@ -367,7 +370,7 @@ body
 
 .content3
     display: block
-    width: 95%
+    width: 92%
     font: $section_text_font
     color: $hover_color
     text-align: left
@@ -439,11 +442,65 @@ body
   &:focus
         outline: none
 
-#contentholder2:after
+#contentholder3:after
   content: ""
   display: table
   clear: both
 
+#footer
+    margin-top: 0
+    width: 100%
+    height: 13vw
+    background-color: $hover_color
+
+.column4 
+  float: left
+  height: 100%
+  position: relative
+  background-color: $hover_color
+
+.left4 
+  margin-left: 7.7%
+  width: 42%
+  display: table
+
+.content4
+    display: table-cell
+    width: 100%
+    font: $footertext_font
+    color: #727273
+    text-align: left
+    position: relative
+    vertical-align: middle
+
+.right4
+  width: 50.3%
+    
+  a
+    float: left
+    padding: 1vw
+    text-decoration: none
+    font: $footer_link_font
+    font-weight: 600
+    text-transform: uppercase
+    text-align: center
+    color: $main_color
+    margin-top: 4%
+
+  p
+      float: right
+      margin-right: 6%
+      font: $footerlogo_font
+      color: $main_color
+      margin-top: 10%
+
+#footer_home
+    margin-left: 30%
+
+#footer:after
+  content: ""
+  display: table
+  clear: both
 
 
 @media screen and ( max-width: 480px  )
@@ -528,6 +585,7 @@ body
     
     #contentholder2
         margin-top: 50%
+        background-color: none
         
     #ch2_1, #ch2_2, #ch3
         margin: 0
@@ -539,7 +597,7 @@ body
         background-color: $head_color
         padding: 1.5% 0
 
-    .content2, .content2_2, .content3
+    .content2, .content2_2, .content3, .content4
         width: 90%
         padding: 5%
         text-align: justify
@@ -636,3 +694,11 @@ body
     
     .field2
         height: 45%
+
+    .left4
+        margin: 0
+        margin-top: 20%
+        width: 100%
+    
+    .content4
+        font-size: 2.5vw
