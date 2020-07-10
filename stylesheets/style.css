@@ -542,12 +542,20 @@ body {
   margin-top: 4%;
 }
 
+.right4 a:hover {
+  color: #727273;
+}
+
 .right4 p {
   float: right;
   margin-right: 6%;
   font: 0.8vw Open Sans;
   color: #ffffff;
   margin-top: 10%;
+}
+
+.right4 p span {
+  font-weight: bold;
 }
 
 #footer_home {
@@ -746,6 +754,9 @@ body {
   }
   .messageform_fieldTitle, #button2 {
     font-size: 3.2vw;
+  }
+  .messageform_fieldTitle {
+    margin-left: 0;
   }
   .field1, .field2 {
     font-size: 3vw;

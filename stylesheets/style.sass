@@ -17,6 +17,7 @@ $main_color: #ffffff
 $hover_color: #1e2123
 $button2_color: #0c9aec
 $grey: #d7d7d7
+$footertext_color: #727273
 
 body
     background-color: $main_color
@@ -471,7 +472,7 @@ body
     display: table-cell
     width: 100%
     font: $footertext_font
-    color: #727273
+    color: $footertext_color
     text-align: left
     position: relative
     vertical-align: middle
@@ -490,12 +491,18 @@ body
     color: $main_color
     margin-top: 4%
 
+    &:hover
+        color: $footertext_color
+
   p
       float: right
       margin-right: 6%
       font: $footerlogo_font
       color: $main_color
       margin-top: 10%
+
+      span
+          font-weight: bold
 
 #footer_home
     margin-left: 30%
@@ -697,6 +704,9 @@ body
     
     .messageform_fieldTitle, #button2
         font-size: 3.2vw
+
+    .messageform_fieldTitle
+        margin-left: 0
     
     .field1, .field2
         font-size: 3vw
