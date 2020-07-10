@@ -784,4 +784,10 @@ body {
     background-color: transparent;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .content1 {
+    font-size: 1.3wv;
+  }
+}
 /*# sourceMappingURL=style.css.map */
