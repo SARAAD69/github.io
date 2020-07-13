@@ -1,5 +1,3 @@
-
-
 function getAPI() {
   fetch('https://jsonplaceholder.typicode.com/posts').then(function (list) {
     return list.json();
