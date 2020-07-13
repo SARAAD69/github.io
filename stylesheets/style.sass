@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700);
     
+$L_margin: 7.7%
+
 $L_font: 12px Open Sans
 $l_font: 11px Open Sans
 $R_font: 15px Open Sans
@@ -12,12 +14,94 @@ $inputfieldTitle_font: 1.25vw Open Sans
 $footertext_font: 1vw Open Sans
 $footer_link_font: 1.1vw Open Sans
 $footerlogo_font: 0.8vw Open Sans
+
 $head_color: #448ccb
 $main_color: #ffffff
 $hover_color: #1e2123
 $button2_color: #0c9aec
 $grey: #d7d7d7
 $footertext_color: #727273
+
+$input_border: 0.19vw solid $grey
+
+
+@mixin linkTextstyle
+    text-decoration: none
+    text-transform: uppercase
+    text-align: center
+
+@mixin font_color($font, $color)
+    font: $font
+    color: $color
+
+@mixin font_color_weight($font, $color, $weight)
+    @include font_color($font, $color)
+    font-weight: $weight
+
+@mixin contentholder_parameters($height: 0, $backgroundColor: 0)
+    margin-top: 0
+    width: 100%
+    height: $height
+    background-color: $backgroundColor
+    
+@mixin column_middlePosition($height: 0)
+    float: left
+    height: $height
+    position: relative
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+
+@mixin column($backgroundColor: 0)
+    float: left
+    height: 100%
+    position: relative
+    background-color: $backgroundColor
+
+@mixin Title_span
+    border-bottom: 0.7vw solid
+    padding-bottom: 1.5vw
+
+@mixin contentDisplay($width: 0)
+    display: block
+    position: relative
+    width: $width
+
+@mixin button_generalParams
+    display: block
+    position: relative
+    transition-duration: 0.4s
+    cursor: pointer
+    
+    &:focus
+        outline: none
+
+@mixin button_mobileParams
+    border: 1vw solid
+    padding: 1.5vw 1.7vw
+
+@mixin Clear_floats
+  content: ""
+  display: table
+  clear: both  
+
+@mixin inputfieldStyle
+    font: $section_text_font
+    padding: 0.8vw 1.3vw
+    margin-left: 3% 
+    width: 60%
+    border: $input_border
+
+    &:focus
+        outline: none
+
+@mixin column_transform
+    margin: 0
+    width: 100%
+    display: table
+      
+    
 
 body
     background-color: $main_color
@@ -35,19 +119,16 @@ body
 .header-upper
   float: left
   margin-top: 1%
-  margin-left: 7.7%
+  margin-left: $L_margin
   margin-bottom: 2% 
   width: 92.3%
   
   a
-       padding-right: 0.75%
-       padding-left: 0.5% 
-       text-decoration: none
-       font: $L_font
-       text-transform: uppercase
-       text-align: center
-       color: $main_color
-       border-right: 1px solid $main_color 
+    @include font_color($L_font, $main_color)
+    @include linkTextstyle
+    padding-right: 0.75%
+    padding-left: 0.5%
+    border-right: 1px solid $main_color 
 
   a:hover
        text-decoration: underline   
@@ -65,23 +146,16 @@ body
   margin-right: 2%
   
   a
+    @include linkTextstyle
     float: left
     padding: 15px
-    text-decoration: none
-    font: $R_font
-    font-weight: 600
-    text-transform: uppercase
-    text-align: center
-    color: $main_color
+    @include font_color_weight($R_font, $main_color, 600)
 
     &:hover
         color: $hover_color
 
 .dropdown
     float: left
-
-.dropdown-content
-    display: none
 
 .dropdown-content
   display: none
@@ -114,9 +188,7 @@ body
     padding-left: 26px
     width: 100px 
     text-align: left
-    color: $main_color
-    font: $l_font
-    font-weight: 600
+    @include font_color_weight($l_font, $main_color, 600)
     text-decoration: none
     display: block
 
@@ -132,10 +204,9 @@ body
    
 
 .logo
+  @include linkTextstyle
   float: left  
   font: $font_logo
-  text-transform: uppercase
-  text-decoration: none
   color: $main_color
   margin-left: 7.6%
 
@@ -149,72 +220,47 @@ body
     font-weight: 100
 
 #contentholder1
-    margin-top: 0
-    width: 100%
-    height: 54vw
-    background-color: $main_color
+    @include contentholder_parameters($height: 54vw, $backgroundColor: $main_color)
 
-.column 
-  float: left
-  height: 46vw
-  position: relative
-  top: 50%
-  -webkit-transform: translateY(-50%)
-  -ms-transform: translateY(-50%)
-  transform: translateY(-50%)
+.column
+  @include column_middlePosition($height: 46vw)
 
 .left 
-  margin-left: 7.7%
+  margin-left: $L_margin
   width: 22%
   background-color: $head_color
 
   span
-    border-bottom: 0.7vw solid
-    padding-bottom: 1.5vw
+    @include Title_span
 
 .title
-      font: $title_font
-      font-weight: 700
-      text-transform: uppercase
+    @include font_color_weight($title_font, $main_color, 700)
+    text-transform: uppercase
 
 #ch1
-    color: $main_color
     text-align: center    
 
 .content1
-    display: block
-    width: 60%
-    font: $section_text_font
-    color: $main_color
+    @include contentDisplay(60%)
+    @include font_color($section_text_font, $main_color)
     text-align: left
     margin-left: 15%
     margin-top: 20%
-    position: relative
 
 #button1
+  @include button_generalParams
   margin-left: 40%
   margin-top: 48%
   padding: 0.4vw 0.7vw
-  text-align: center
-  text-decoration: none
-  text-transform: uppercase
-  display: block
-  position: relative
-  font: $L_font
+  @include linkTextstyle
+  @include font_color_weight($L_font, $main_color, bold)
   font-size: 1vw
-  font-weight: bold
-  transition-duration: 0.4s
-  cursor: pointer
   background-color: $head_color
-  color: $main_color
   border: 0.2vw solid $main_color
 
   &:hover
     background-color: $main_color
     color: $head_color
-  
-  &:focus
-        outline: none
 
 .right
   margin-left: 6.5%
@@ -225,54 +271,35 @@ body
       width: 100%
 
 #ch1_2
-    font: $section_title_font
-    color: $hover_color
-    font-weight: 700
+    @include font_color_weight($section_title_font, $hover_color, 700)
     text-transform: uppercase
     margin-left: 10%
     margin-top: 6%
 
 .content1_2
-    display: block
-    width: 70%
-    font: $section_text_font
-    color: $hover_color
+    @include contentDisplay(70%)
+    @include font_color($section_text_font, $hover_color)
     text-align: left
     margin-left: 10%
-    position: relative
 
 .last
     margin-bottom: 8.5%
 
 #contentholder1:after
-  content: ""
-  display: table
-  clear: both
+  @include Clear_floats
 
 #contentholder2
-    margin-top: 0
-    width: 100%
-    height: 50vw
-    background-color: $head_color
+    @include contentholder_parameters($height: 50vw, $backgroundColor: $head_color)
 
 .column2 
-  float: left
-  height: 36vw
-  position: relative
-  top: 50%
-  -webkit-transform: translateY(-50%)
-  -ms-transform: translateY(-50%)
-  transform: translateY(-50%)
+  @include column_middlePosition($height: 36vw)
 
 #ch2_1
-    font: $section_title_font
-    font-weight: 700
+    @include font_color_weight($section_title_font, $main_color, 700)
     text-transform: uppercase
-    color: $main_color
 
 .content2
-    font: $section_text_font
-    color: $main_color
+    @include font_color($section_text_font, $main_color)
 
 .right2
   margin-left: 5.5%
@@ -280,15 +307,12 @@ body
 
 #ch2_2
     margin-left: 4.25%
-    font: $section_title_font
-    font-weight: 700
+    @include font_color_weight($section_title_font, $main_color, 700)
     text-transform: uppercase
-    color: $main_color
 
 .content2_2
     margin-left: 4.25%
-    font: $section_text_font
-    color: $main_color
+    @include font_color($section_text_font, $main_color)
 
 #list_section
     width: 100%
@@ -318,13 +342,11 @@ body
       text-align: justify
 
       li
-          border-bottom: 0.1vw solid $hover_color 
+        border-bottom: 0.1vw solid $hover_color 
 
 
 .list_heading
-    font: $L_font
-    color: $hover_color
-    font-weight: 700
+    @include font_color_weight($L_font, $hover_color, 700)
     font-size: 1.4vw
     margin-left: 7%
 
@@ -339,32 +361,20 @@ body
 
 
 #contentholder2:after
-  content: ""
-  display: table
-  clear: both
-
-#freespace
-    display: none
+  @include Clear_floats
 
 #contentholder3
-    margin-top: 0
-    width: 100%
-    height: 56vw
-    background-color: $main_color
+    @include contentholder_parameters($height: 56vw, $backgroundColor: $main_color)
 
 .column3 
-  float: left
-  height: 100%
-  position: relative
-  background-color: $main_color
+    @include column($backgroundColor: $main_color)
 
 .left3 
-  margin-left: 7.7%
+  margin-left: $L_margin
   width: 42%
 
   span
-    border-bottom: 0.7vw solid
-    padding-bottom: 1.5vw
+    @include Title_span
 
 #ch3
     color: $hover_color
@@ -373,12 +383,9 @@ body
     margin-bottom: 13%
 
 .content3
-    display: block
-    width: 92%
-    font: $section_text_font
-    color: $hover_color
+    @include contentDisplay($width: 92%)
+    @include font_color($section_text_font, $hover_color)
     text-align: left
-    position: relative
 
 .paragraph
     margin-top: 5%
@@ -395,84 +402,50 @@ body
     margin-top: 27%
 
 .messageform_fieldTitle
-    font: $inputfieldTitle_font
-    font-weight: bold
+    @include font_color_weight($inputfieldTitle_font, $hover_color, bold)
     text-transform: uppercase
     margin-left: 3%
     margin-bottom: 1%
 
 .field1
-    font: $section_text_font
-    padding: 0.8vw 1.3vw
-    margin-left: 3% 
-    width: 60%
-    border: 0.19vw solid $grey
-
-    &:focus
-        outline: none
+    @include inputfieldStyle
 
 .field2
-    font: $section_text_font
-    padding: 0.8vw 1.3vw
-    margin-left: 3% 
-    width: 60%
+    @include inputfieldStyle
     height: 30%
-    border: 0.19vw solid $grey
-
-    &:focus
-        outline: none
 
 #button2
+  @include button_generalParams
   margin-left: 3%
   margin-top: 3%
   padding: 0.4vw 0.8vw
-  text-align: center
-  text-decoration: none
-  text-transform: uppercase
-  display: block
-  position: relative
-  font: $inputfieldTitle_font
-  font-weight: bold
-  transition-duration: 0.4s
-  cursor: pointer
+  @include linkTextstyle
+  @include font_color_weight($inputfieldTitle_font, $button2_color, bold)
   background-color: $main_color
-  color: $button2_color
   border: 0.2vw solid $button2_color
 
   &:hover
     background-color: $button2_color
     color: $main_color
 
-  &:focus
-        outline: none
-
 #contentholder3:after
-  content: ""
-  display: table
-  clear: both
+  @include Clear_floats
 
 #footer
-    margin-top: 0
-    width: 100%
-    height: 13vw
-    background-color: $hover_color
+    @include contentholder_parameters($height: 13vw, $backgroundColor: $hover_color)
 
 .column4 
-  float: left
-  height: 100%
-  position: relative
-  background-color: $hover_color
+    @include column($backgroundColor: $hover_color)
 
 .left4 
-  margin-left: 7.7%
+  margin-left: $L_margin
   width: 42%
   display: table
 
 .content4
     display: table-cell
     width: 100%
-    font: $footertext_font
-    color: $footertext_color
+    @include font_color($footertext_font, $footertext_color)
     text-align: left
     position: relative
     vertical-align: middle
@@ -483,12 +456,8 @@ body
   a
     float: left
     padding: 1vw
-    text-decoration: none
-    font: $footer_link_font
-    font-weight: 600
-    text-transform: uppercase
-    text-align: center
-    color: $main_color
+    @include linkTextstyle
+    @include font_color_weight($footer_link_font, $main_color, 600)
     margin-top: 4%
 
     &:hover
@@ -497,8 +466,7 @@ body
   p
       float: right
       margin-right: 6%
-      font: $footerlogo_font
-      color: $main_color
+      @include font_color($footerlogo_font, $main_color)
       margin-top: 10%
 
       span
@@ -508,9 +476,7 @@ body
     margin-left: 30%
 
 #footer:after
-  content: ""
-  display: table
-  clear: both
+  @include Clear_floats
 
 
 @media screen and ( max-width: 480px  )
@@ -527,6 +493,7 @@ body
         a
          padding-right: 1.25%
          font: $l_font
+
     .header-lower
          a
           float: none
@@ -555,21 +522,17 @@ body
                 right: 45%
 
     .left
-        margin: 0
+        @include column_transform
         margin-top: 7%
-        width: 100%
-        display: table
 
     .right
-        margin: 0
+        @include column_transform
         margin-top: 20%
-        width: 100%
-        display: table
 
     #ch1
         font-size: 5vw
     
-    .content1
+    .content1, .content1_2, .content2, .content2_2, .content3, .content4
         width: 90%
         padding: 5%
         text-align: justify
@@ -577,24 +540,17 @@ body
         font-size: 3vw
 
     #button1
+        @include button_mobileParams
         margin: auto
         margin-bottom: 8%
         font-size: 3.5vw
-        border: 1vw solid $main_color
-        padding: 1.5vw 1.7vw
 
-    #ch1_2
+    #ch1_2, #ch2_1, #ch2_2, #ch3
         margin: 0
         margin-top: 2%
         font-size: 5vw
         text-align: center
     
-    .content1_2
-        width: 90%
-        padding: 5%
-        text-align: justify
-        margin: 0
-        font-size: 3vw
     
     .last
         padding-top: 0
@@ -603,22 +559,11 @@ body
         margin-top: 50%
         background-color: none
         
-    #ch2_1, #ch2_2, #ch3
-        margin: 0
-        margin-top: 2%
-        font-size: 5vw
-        text-align: center
     
     #ch2_2
         background-color: $head_color
         padding: 1.5% 0
 
-    .content2, .content2_2, .content3, .content4
-        width: 90%
-        padding: 5%
-        text-align: justify
-        margin: 0
-        font-size: 3vw
 
     .content2_2
         background-color: $head_color
@@ -633,10 +578,8 @@ body
         margin-top: 0
     
     .right2
-        margin: 0
+        @include column_transform
         margin-top: 7.5%
-        width: 100%
-        display: table
         background-color: none
     
     #list_section
@@ -662,14 +605,9 @@ body
     #list_section
         height: 30vw
     
-    .column_list
-        height: 100%
-    
     .left3
-        margin: 0
+        @include column_transform
         margin-top: -5%
-        width: 100%
-        display: table
 
     #ch3
         padding-bottom: 5%
@@ -678,9 +616,7 @@ body
         padding: 0 5% 5%
 
     .right3
-        margin: 0
-        width: 100%
-        display: table
+        @include column_transform
 
         form
 
@@ -693,11 +629,9 @@ body
                 text-align: center
     
     #button2
-        display: block
+        @include button_mobileParams
         margin: 0 auto
         width: 20%
-        border: 1vw solid $button2_color
-        padding: 1.5vw 1.7vw
     
     #top_field
         margin-top: 0
@@ -715,19 +649,16 @@ body
         height: 45%
 
     .left4
-        margin: 0
+        @include column_transform
         margin-top: 20%
-        width: 100%
     
     .content4
         font-size: 2.5vw
         padding-bottom: 2%
 
     .right4
-        margin: 0
+        @include column_transform
         margin-top: -1%
-        width: 100%
-        display: table
 
         a
             font-size: 2.5vw
